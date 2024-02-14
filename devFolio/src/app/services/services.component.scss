@@ -1,0 +1,41 @@
+.title {
+
+  p {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 5px;
+      background-color: #3171ff;
+      left: 45%;
+      bottom: -70%;
+    }
+  }
+}
+
+.box {
+  overflow: hidden;
+  min-height: 320px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  &:hover{
+    box-shadow: 1px 1px 10px 1px black;
+  }
+  .icon{
+    width: 80px;
+    height: 80px;
+    margin-top: 18px;
+    padding-top: 18px;
+    font-size: 30px;
+    border: white 5px solid;
+      border-radius: 50%;
+    &:hover{
+      background-color: #3171ff;
+      border-color: rgb(143, 139, 139);
+    }
+  }
+}

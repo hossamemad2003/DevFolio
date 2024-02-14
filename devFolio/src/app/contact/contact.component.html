@@ -1,0 +1,72 @@
+<div class="container ms-3 row justify-content-between">
+  <div class="col-md-6 p-3">
+    <h3>Send Message Us</h3>
+    <form (ngSubmit)="submit()" class="mt-5" [formGroup]="contactForm">
+      <input
+        formControlName="name"
+        placeholder="enter your name"
+        class="form-control mb-2"
+        id="name"
+      />
+      <input
+        formControlName="email"
+        placeholder="enter your email"
+        class="form-control mb-2"
+        type="email"
+        id="email"
+      />
+      <input
+        formControlName="subject"
+        placeholder="enter the subject"
+        class="form-control mb-2"
+        id="subject"
+      />
+      <textarea
+        formControlName="message"
+        placeholder="write your message here . . . . . . "
+        class="w-100 mt-4 form-control mb-2"
+        name="Message"
+        id=""
+        cols="30"
+        rows="10"
+      ></textarea>
+      <button
+        type="submit"
+        [disabled]="contactForm.invalid"
+        class="rounded-pill"
+        [ngClass]="{ 'opacity-50': contactForm.invalid }"
+      >
+        Send Message
+      </button>
+    </form>
+  </div>
+  <div class="col-md-6 p-3">
+    <h3>Get In Touch</h3>
+    <p class="mt-5 text-muted">
+      Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Facilis Dolorum
+      Dolorem Soluta Quidem Expedita Aperiam Aliquid At. Totam Magni Ipsum
+      Suscipit Amet? Autem Nemo Esse Laboriosam Ratione Nobis Mollitia
+      Inventore?
+    </p>
+    <ul class="p-0 mt-5 text-muted">
+      <li>
+        <i class="fa-solid fa-location-dot"></i>
+        <span class="ms-2">329 WASHINGTON ST BOSTON, MA 02108</span>
+      </li>
+      <li>
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <span class="ms-2">(617) 557-0089</span>
+      </li>
+      <li>
+        <i class="fa-regular fa-envelope"></i>
+        <span class="ms-2">Contact@Example.Com</span>
+      </li>
+    </ul>
+    <div class="row justify-content-evenly">
+      <i class="col-md-3 fa-brands fa-square-facebook"></i>
+      <i class="col-md-3 fa-brands fa-square-twitter"></i>
+      <i class="col-md-3 fa-brands fa-square-instagram"></i>
+      <i class="col-md-3 fa-brands fa-linkedin"></i>
+    </div>
+  </div>
+</div>

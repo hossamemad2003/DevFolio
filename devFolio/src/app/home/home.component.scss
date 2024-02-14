@@ -1,0 +1,66 @@
+.head{
+  height: 100%;
+div{
+  min-height: 63.5vw;
+  height: 100%;
+  background-image: url('/assets/hero-bg.jpg');
+  background-position: -300px .5px;
+  filter: grayscale(20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+  h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 70px;
+    position: relative;
+    span{
+      font-size: 40px;
+    }
+    span::before{
+      content: '';
+      position: absolute;
+      left: 35%;
+      animation-name: text-animation;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  }
+}}
+@keyframes text-animation {
+  0%{
+    content: 'De|';
+  }
+  10%{
+    content: 'desi|';
+  }
+  20%{
+    content: 'designer|';
+  }
+  30%{
+    content: 'de|';
+  }
+  40%{
+    content: 'devel|';
+  }
+  50%{
+    content: 'developer|';
+  }
+  60%{
+    content: 'develop|';
+  }
+  70%{
+    content: 'deve|';
+  }
+  80%{
+    content: 'pho|';
+  }
+  90%{
+    content: 'photo|';
+  }
+  100%{
+    content: 'photographer|';
+  }
+}

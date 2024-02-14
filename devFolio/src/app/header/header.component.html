@@ -1,0 +1,59 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid w-75 mx-auto">
+    <a class="navbar-brand fw-bolder" href="#">DevFolio</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item ms-4">
+          <a class="nav-link" routerLinkActive="active" routerLink="home"
+            >HOME</a
+          >
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link" routerLinkActive="active" routerLink="about"
+            >ABOUT</a
+          >
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link" routerLinkActive="active" routerLink="serv"
+            >SERVICES</a
+          >
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link" routerLinkActive="active" routerLink="work"
+            >WORK</a
+          >
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link" routerLinkActive="active" routerLink="blog"
+            >BLOG</a
+          >
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link" routerLinkActive="active" routerLink="contact"
+            >CONTACT</a
+          >
+        </li>
+      </ul>
+      <form class="d-flex">
+        <button
+          (click)="changeView()"
+          class="btn ms-3 btn-outline-success"
+          style="font-size: small; width: 100px; font-weight: 400"
+        >
+          Change view
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>

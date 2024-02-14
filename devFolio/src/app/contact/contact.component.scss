@@ -1,0 +1,57 @@
+.container{
+  div{
+    form{
+      input{
+        margin-top: 30px;
+      }
+      text-area{
+        height: 280px
+      }
+      button{
+        margin-left: 25%;
+        background-color: #3171ff;
+        color: whitesmoke;
+        height: 50px;
+        width: 150px;
+        border: none;
+      }
+    }
+    h3{
+      position: relative;
+      color: #282730;
+      font-size: xx-large;
+      font-weight: 400;
+      &::after{
+        content: '';
+        position: absolute;
+        width: 120px;
+        height: 6px;
+        background-color: #3171ff;
+        bottom: -15px;
+        left: 0;
+      }
+    }
+    ul{
+      list-style: none;
+      li{
+        margin-top: 20px;
+        i{
+          color: #3171ff;
+          font-size: larger;
+        }
+      }
+    }
+    .row{
+      margin-top: 80px;
+      i{
+        width: 50px;
+        height: 50px;
+        font-size: x-large;
+        border: #3171ff 5px solid;
+        border-radius: 50%;
+        padding-top: 8px;
+        font-weight: 400;
+      }
+    }
+  }
+}
